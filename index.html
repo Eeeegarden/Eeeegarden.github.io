@@ -20,13 +20,13 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Clarence Taylor</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile-me.jpg" alt="..." /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#project">Project</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
@@ -40,44 +40,65 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Clarence
-                        <span class="text-primary">Taylor</span>
+                        이정원
+                        <span class="text-primary">JeongWon Lee</span>
                     </h1>
                     <div class="subheading mb-5">
-                        3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-                        <a href="mailto:name@email.com">name@email.com</a>
+                        <!-- 3542 Berry Street · 강원도 원주시, CO 80810 · 010-0000-0000 · -->
+                        <a href="mailto:name@email.com">wjddnjs3333@naver.com</a>
                     </div>
-                    <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                    <p class="lead mb-5">Java & Spring 활용하여 서비스를 개발하는 서버 백엔드 개발자입니다. 주어진 목표에 도달하기 위해 빠르게 배우고 어디서든 잘 녹아들기 위해 노력합니다. 문제해결에 대해 더 나은 방법을 탐구하며 끊임없이 고민합니다. 이러한 과정과 경험들을 쌓아가며 회사와 함께 성장해 나가고 싶습니다. </p>
                     <div class="social-icons">
-                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-icon" href="https://github.com/Eeeegarden"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Experience-->
-            <section class="resume-section" id="experience">
+            <section class="resume-section" id="project">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
+                    <h2 class="mb-5">Project</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                            <h3 class="mb-0">약톡톡 <a class="social-icon" href="https://github.com/marso34/ytt-medicine-vending-machine"><i class="fab fa-github"></i></a></h3>
+                            <div class="subheading mb-3">모바일로 주문가능한 약 자판기</div>
+                            <p>약 자판기의 위치 및 재고를 모바일 어플리케이션으로 실시간 조회 및 주문이 가능한 4인 팀프로젝트 [BE:2/FE:1/ES:1]</p>
+                            <p class="subheading">✨ 사용 기술 </p>
+                            <p> Back-End : Java, Spring, JPA, Spring Security, Jwt, Swagger, WebSocket, AWS - EC2, RDS</p>
+                            <p class="subheading">✅ 프로젝트 요약 <img class="issue-me" src="assets/img/ytt-intro.png" alt="..." /></p>
+                            <p class="subheading">👨‍💻 내가 기여한 부분<img class="issue-me" src="assets/img/issue-me.png" alt="..." /></p>
+                            <p class="subheading">🚨 겪은 트러블 슈팅 및 해결과정</p> 
+                            <p>1. 자판기와의 양방향 WebSocket 통신 구현</p> 
+                            <ul> <li>문제 상황 : 자판기에서 주문에 대한 응답을 서버가 처리하여 사용자에게 보내야하는 요구사항이 있었습니다. 하지만 기존의 REST API 통신으로는 사용자와 서버 간 실시간 양방향 통신이 불가능했습니다.</li> 
+                                <li>해결 방안 : STOMP(Simple Text Oriented Messaging Protocol) 형식의 WebSocket을 도입하여 양방향 통신을 구현했습니다. 이를 통해 자판기의 주문 처리 결과를 서버가 실시간으로 받아 사용자에게 전달할 수 있게 되었습니다.</li> </ul> 
+                            <p>2. Security Filter 단에서 발생한 예외처리 핸들링</p> 
+                            <ul> <li>문제 상황 : Spring Security의 Filter 체인에서 발생하는 예외는 DispatcherServlet에 도달하기 전에 발생하므로, 전역 핸들러로 처리할 수 없었습니다. 이로 인해 인증 실패, 권한 부족 등의 보안 관련 예외에 대해 일관된 에러 응답을 클라이언트에 제공하기 어려웠습니다.</li> 
+                                <li>해결 방안 : AccessDeniedHandler를 커스텀 구현하여 인증 및 인가 실패 시의 동작을 정의했습니다. 이를 통해 클라이언트에 일관된 형식의 에러 응답을 제공하고, 프론트엔드에서 더 쉽게 에러 처리를 할 수 있게 되었습니다.</li> </ul>
+                            </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2024 - December 2024 [4M]</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <h3 class="mb-0">반려인 SNS 어플리케이션 <a class="social-icon" href="https://github.com/Eeeegarden/PetCommuApp_Server"><i class="fab fa-github"></i></a></h3>
+                            <div class="subheading mb-3">우리동네 반려인들의 소셜 네트워킹 서비스</div>
+                            <p class="subheading">✨ 사용 기술 </p>
+                            <p> Back-End : Java, Spring, JPA, Spring Security, MariaDB</p>
+                            <p class="subheading">✅ 프로젝트 요약 <img class="issue-me" src="assets/img/sns-intro.png" alt="..." /></p>
+                            <p class="subheading">👨‍💻 내가 기여한 부분</p>
+                            <p>2024년 3월부터 6월까지 3인 팀으로 시작된 프로젝트를 현재 단독으로 계승하여 개발 중입니다. 초기 개발 단계에서 핵심 기능 구현에 주도적으로 참여했으며, 미완성의 프로젝트를 완성하기위해 기능을 개발하는 데 집중하고 있습니다.</p> 
+                            <p class="subheading">🚨 겪은 트러블 슈팅 및 해결과정</p> 
+                            <p>1. 사용자 이름 검색 기능 최적화</p> 
+                            <ul> <li>문제 상황 : 사용자 이름을 포함한 검색 기능을 구현해야 했으나, 기존의 JPA 메서드로는 부분 일치 검색이 어려웠습니다. 또한, 대규모 데이터베이스에서의 성능 문제도 고려해야 했습니다.</li> 
+                                <li>해결 방안 : EntityManager를 활용한 JPQL 쿼리를 작성하여 문제를 해결했습니다. 'like' 연산자와 와일드카드를 사용하여 부분 일치 검색을 구현했습니다. 이 방식은 데이터베이스 인덱스를 효과적으로 활용할 수 있어 대규모 데이터에서도 효율적인 검색이 가능해졌습니다.</li> </ul> 
+                            <!-- <p>2. 추가예정</p> 
+                            <ul> <li>문제 상황 : </li> 
+                                <li>해결 방안 : </li> </ul>
+                            </p> -->
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">March 2024 - July 2024 / January 2025 ~</span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <!-- <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Junior Web Designer</h3>
                             <div class="subheading mb-3">Shout! Media Productions</div>
@@ -92,7 +113,7 @@
                             <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <hr class="m-0" />
@@ -102,21 +123,21 @@
                     <h2 class="mb-5">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
+                            <h3 class="mb-0">강릉원주대학교</h3>
+                            <div class="subheading mb-3">컴퓨터 공학과</div>
+                            <!-- <div>Computer Science - Web Development Track</div> -->
+                            <!-- <p>학점: 0.00 / 4.5</p> -->
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">March 2019 - January 2025</span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <!-- <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">James Buchanan High School</h3>
                             <div class="subheading mb-3">Technology Magnet Program</div>
                             <p>GPA: 3.56</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <hr class="m-0" />
@@ -126,36 +147,54 @@
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
                     <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-leaf"></i></li>
                         <li class="list-inline-item"><i class="fab fa-html5"></i></li>
                         <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
                         <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-database"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-server"></i></li>
                     </ul>
-                    <div class="subheading mb-3">Workflow</div>
+                    <div class="subheading mb-3">Back-End</div>
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
+                            Java 
+                            <ul> 
+                                <li>객체지향 프로그래밍의 원칙을 이해하고 적용할 수 있습니다.</li> 
+                            </ul>
+                        </li> 
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Spring
+                            <ul> 
+                                <li>Spring Boot를 사용한 애플리케이션 서버 개발 경험이 있습니다.</li> 
+                                <li>Spring Security를 활용한 인증 및 권한 관리 구현이 가능합니다.</li> 
+                                <li>스프링 컨테이너와 스프링 빈의 개념을 이해하고, IoC/DI 원리를 실제 코드에 적용할 수 있습니다.</li> 
+                                <li>SOLID 원칙을 이해하고 객체 지향적 설계를 스프링 프레임워크에 적용할 수 있습니다.</li> 
+                            </ul>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
+                            MySQL, MariaDB
+                            <ul> 
+                                <li>AWS-RDS(MySQL) 사용한 경험이 있습니다.</li> 
+                                <li>MariaDB를 활용한 경험이 있습니다.</li> 
+                            </ul>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
+                            Git & Github
+                            <ul> 
+                                <li>브랜치 전략을 활용한 협업 경험이 있습니다.</li> 
+                                <li>Pull Request를 통한 코드 리뷰 프로세스에 익숙합니다.</li> 
+                            </ul>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
+                            ETC
+                            <!-- <li></li> 
+                            <li></li> -->
                         </li>
                     </ul>
                 </div>
@@ -165,8 +204,7 @@
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                    <p >간단한 웨이트 트레이닝을 취미삼아 하고있습니다. 처음에는 기초체력 및 몸무게 증진이 목적이였지만 꾸준히 함으로써 인내심, 성취감 등 다양한 내적성장을 이룰 수 있었습니다.</p>
                 </div>
             </section>
             <hr class="m-0" />
@@ -177,42 +215,18 @@
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
+                            최우수상 - 강릉원주대학교 컴퓨터공학과 - 2024 제3회 프로그래밍 경진대회
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
+                            최우수상 - 강릉원주대학교 컴퓨터공학과 - 2023 제2회 프로그래밍 경진대회
                         </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
+                        <!-- <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                             1
                             <sup>st</sup>
                             Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </section>

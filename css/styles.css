@@ -10921,6 +10921,10 @@ p.lead {
     display: block;
   }
 }
+.issue-me {
+  width: 750px;
+  height: auto;
+}
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
